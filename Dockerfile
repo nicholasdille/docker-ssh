@@ -7,9 +7,8 @@ RUN apk --update --no-cache add \
     supervisor \
     openssh \
     curl \
-    && \
-    pip install docker-compose && \
-    mkdir -p /var/log/supervisor
+ && pip install docker-compose \
+ && mkdir -p /var/log/supervisor
 
 COPY files /
 EXPOSE 22
