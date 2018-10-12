@@ -1,4 +1,5 @@
-FROM docker:17.06.0-ce-dind
+ARG BASE=docker:18.09-rc-dind
+FROM ${BASE}
 
 RUN apk --update add \
     bash \
