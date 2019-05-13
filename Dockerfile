@@ -1,4 +1,4 @@
-ARG BASE=docker:18.09-dind
+ARG BASE=docker:19.03-rc-dind
 FROM ${BASE}
 
 RUN apk --update --no-cache add \
